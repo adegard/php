@@ -1,0 +1,52 @@
+<?Php
+
+
+$sub = 'title';
+
+
+require 'PHPMailer/PHPMailerAutoload.php'; 
+
+
+$emails = array();
+
+//  get email id data from CSV using below code */
+$file =  file_get_contents("list.csv"); 
+$emails = explode(",",$file);
+
+for($i=0;$i<count($emails);$i++)
+ {
+		
+		$mail = new PHPMailer;
+		$mail->setFrom('info@email.com', 'Valentina XXX');
+		$mail->addReplyTo('info@email.com', 'Valentina XXX');
+		$mail->Subject = $sub;				
+		$mail->addAddress($emails[$i]);
+		$message = file_get_contents("email5.html"); // HTML  template 
+		$mail->msgHTML($message.'<center></center></br></br></br></br>
+		</body>
+		</html>');		
+		
+		if (!$mail->send()) {
+			echo "Mailer Error: " . $mail->ErrorInfo;
+		} else {
+			echo $emails[$i]." - ";	
+	
+		}	
+
+	
+		echo $i."</br>";  
+
+}
+
+
+
+
+echo "</br>".$sub;
+echo "</br>".$message;
+
+echo "</body></html>";
+
+?>
+
+
+
