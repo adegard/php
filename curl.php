@@ -3,7 +3,7 @@ echo "<h1>IG MARKET SENTIMENTS DASHBOARD using Curl and PHP</h1></br>";
 echo "<h2>Example of Web-Scraping in PHP</h2> </br>";
 echo "<b>DON'T USE THE FOLLOWING INFORMATIONS FOR TRADING!</b></br>";
 echo "<p>The current PHP extract IG pages results for Market sentiment (italian webpages) </br> Using Curl in PHP and returning results in HTML table it's give a friendly Dashboard for Marketing Monitoring of Indexes, Forex, cryptocurrencies...</p> </br>";
-echo "<p>Source code on Github: <a href='  '>  </a></p> </br></br>";
+echo "<p>Source code on Github: <a href='https://github.com/adegard/php/blob/master/curl.php'>https://github.com/adegard/php/blob/master/curl.php</a></p> </br></br>";
 
 echo "
 <style type='text/css'>
