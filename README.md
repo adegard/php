@@ -2,8 +2,8 @@
 
 Some usefull scripts
 
-
-
+- mass mail PHPmailer from csv email file
+- Curl.php: Market Sentiment Dashboard, Web-Scraping using PHP 
 
 <h1> Examples of SQL INNER JOIN </h1>
 
