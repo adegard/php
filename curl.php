@@ -19,11 +19,8 @@ echo "
 echo "
   <tr>
     <th class='tg-us36'>Symbol</th>
-    <th class='tg-us36'>MENU1</th>
-    <th class='tg-us36'>MENU2</th>
-    <th class='tg-us36'>Order text</th>
     <th class='tg-yw4l'>%</th>
-    <th class='tg-yw4l'>Action</th>
+    <th class='tg-yw4l'>Action (if Sentiment is above 70%)</th>
   </tr>
   ";
 
@@ -72,38 +69,6 @@ for ($x = 0; $x <= count($url)-1; $x++) {
 	
 	$symbol=$symbol->plaintext;
 	
-	//MENU1
-	echo "<td class='tg-us36'>";
-		if (strpos($url[$x], 'indici') !== false)    echo 'Indici';
-		else if (strpos($url[$x], 'materie-prime') !== false)    echo 'Materie prime';
-		else if (strpos($url[$x], 'forex-spot') !== false)    echo 'FX';
-		else    echo 'Criptovalute';
-		
-	echo "</td>";
-
-	//MENU2
-	echo "<td class='tg-us36'>";
-		if (strpos($url[$x], 'indici') !== false)    echo $symbol;
-		else if (strpos($url[$x], 'materie-prime') !== false)    echo $symbol;
-		else if (strpos($symbol, '/') !== false)    echo $symbol;
-		else    echo 'Criptovalute';
-		
-	echo "</td>";
-	
-	//Test to find in Orders list
-	echo "<td class='tg-us36'>";
-		if (strpos($symbol, '/') !== false)    echo $symbol.' Mini';
-		//gestione eccezioni:
-		else if (strpos($symbol, 'Spot Gold') !== false)    echo 'Spot Gold (E1 Contract)';
-		else if (strpos($symbol, 'Argento Spot (5000oz)') !== false)    echo 'Contratto Mini Argento Spot (500oz)';
-		else if (strpos($symbol, 'Bitcoin Cash (USD)') !== false)    echo 'Bitcoin Cash';
-		else if (strpos($symbol, 'Ether (USD)') !== false)    echo 'Ether';
-		
-		else if (strpos($url[$x], 'materie-prime') !== false)    echo $symbol;
-		else if (strpos($url[$x], 'indici') !== false)    echo $symbol;
-		else    echo 'TBD';
-		
-	echo "</td>";
 
 	//Percent
 	echo "<td class='tg-yw4l'>";
