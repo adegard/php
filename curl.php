@@ -3,7 +3,10 @@ echo "<h1>IG MARKET SENTIMENTS DASHBOARD using Curl and PHP</h1></br>";
 echo "<h2>Example of Web-Scraping in PHP</h2> </br>";
 echo "<b>DON'T USE THE FOLLOWING INFORMATIONS FOR TRADING!</b></br>";
 echo "<p>The current PHP extract IG pages results for Market sentiment (italian webpages) </br> Using Curl in PHP and returning results in HTML table it's give a friendly Dashboard for Marketing Monitoring of Indexes, Forex, cryptocurrencies...</p> </br>";
-echo "<p>Source code on Github: <a href='https://github.com/adegard/php/blob/master/curl.php'>https://github.com/adegard/php/blob/master/curl.php</a> </br>";
+
+echo "<p>DEMO: <a href='http://www.pc-dream.it/curl.php'>http://www.pc-dream.it/curl.php</a> </br>";
+
+echo "Source code on Github: <a href='https://github.com/adegard/php/blob/master/curl.php'>https://github.com/adegard/php/blob/master/curl.php</a> </br>";
 echo "How to install it: <a href='http://simplestipsandtricks.blogspot.com/2018/06/market-sentiment-dashboard-using-curl.html'>http://simplestipsandtricks.blogspot.com/2018/06/market-sentiment-dashboard-using-curl.html</a></p> </br></br>";
 
 
