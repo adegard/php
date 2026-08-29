@@ -26,3 +26,7 @@ INNER JOIN plus_lav ON relationship.lav_id = plus_lav.mem_id
 
 where dti != '0000-00-00' and `lav_id` ='1590' and password=""
 order by plus_lav.name
+
+---
+
+For an overview of all my other projects, see https://adegard.github.io/blog/
